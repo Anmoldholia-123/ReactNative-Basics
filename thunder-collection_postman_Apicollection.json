@@ -1,0 +1,422 @@
+{
+    "info": {
+        "_postman_id": "7c5006d2-aaac-4b81-9fe9-f6765a44f5a9",
+        "name": "Apicollection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "loginuser",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/loginuser",
+                    "path": [
+                        "loginuser"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc1ODYwOTIsImV4cCI6MTc0NzU4OTY5Mn0.0bp7j9z2hThReiKYdQish8AHeiQIg9WG5H370E4oFdg",
+                        "value": ""
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"message\": \"Login successful\",\n  \"user\": {\n    \"id\": 144,\n    \"name\": \"Anmol\",\n    \"email\": \"anmol@gmail.com\",\n    \"contact\": \"3011281533\",\n    \"password\": \"12345\"\n  },\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc2MDI0NDEsImV4cCI6MTc0NzYwNjA0MX0.njSQyOMwc0lPWVuMTdu2ax7BixgOq066AQ_ojOC6cQM\"\n}\n\n"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc1ODYwOTIsImV4cCI6MTc0NzU4OTY5Mn0.0bp7j9z2hThReiKYdQish8AHeiQIg9WG5H370E4oFdg",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+
+{
+    "info": {
+        "_postman_id": "74c83ef5-0f50-4355-9fa6-913b87ec6b7e",
+        "name": "addproduct",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "product",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/add-product",
+                    "path": [
+                        "add-product"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer"
+                    },
+                    {
+                        "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc1ODYwOTIsImV4cCI6MTc0NzU4OTY5Mn0.0bp7j9z2hThReiKYdQish8AHeiQIg9WG5H370E4oFdg",
+                        "value": ""
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"message\": \"Product added successfully\",\n  \"result\": {\n    \"fieldCount\": 0,\n    \"affectedRows\": 1,\n    \"insertId\": 23,\n    \"serverStatus\": 2,\n    \"warningCount\": 0,\n    \"message\": \"\",\n    \"protocol41\": true,\n    \"changedRows\": 0\n  }\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc1ODYwOTIsImV4cCI6MTc0NzU4OTY5Mn0.0bp7j9z2hThReiKYdQish8AHeiQIg9WG5H370E4oFdg",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "userprofile",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://192.168.18.56:3000/user-profile",
+                    "path": [
+                        "user-profile"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "192",
+                        "168",
+                        "18",
+                        "56"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc1ODYwOTIsImV4cCI6MTc0NzU4OTY5Mn0.0bp7j9z2hThReiKYdQish8AHeiQIg9WG5H370E4oFdg",
+                        "value": ""
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "name",
+                            "value": "Anmol"
+                        },
+                        {
+                            "key": "email",
+                            "value": "ammol@gmail.com"
+                        }
+                    ]
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": " eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc1ODYwOTIsImV4cCI6MTc0NzU4OTY5Mn0.0bp7j9z2hThReiKYdQish8AHeiQIg9WG5H370E4oFdg",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "search product",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://192.168.18.56:3000/search-history",
+                    "path": [
+                        "search-history"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "192",
+                        "168",
+                        "18",
+                        "56"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "[\n  {\n    \"id\": 9,\n    \"keyword\": \"Samsung\",\n    \"created_at\": \"2025-05-17T12:41:46.000Z\"\n  },\n  {\n    \"id\": 8,\n    \"keyword\": \"Dell XPS 13\",\n    \"created_at\": \"2025-05-17T11:27:17.000Z\"\n  },\n  {\n    \"id\": 3,\n    \"keyword\": \"Samsung\",\n    \"created_at\": \"2025-05-17T11:08:11.000Z\"\n  }\n]"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc1ODYwOTIsImV4cCI6MTc0NzU4OTY5Mn0.0bp7j9z2hThReiKYdQish8AHeiQIg9WG5H370E4oFdg",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "search history",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://192.168.18.56:3000/search-history",
+                    "path": [
+                        "search-history"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "192",
+                        "168",
+                        "18",
+                        "56"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "[\n  {\n    \"id\": 9,\n    \"keyword\": \"Samsung\",\n    \"created_at\": \"2025-05-17T12:41:46.000Z\"\n  },\n  {\n    \"id\": 8,\n    \"keyword\": \"Dell XPS 13\",\n    \"created_at\": \"2025-05-17T11:27:17.000Z\"\n  },\n  {\n    \"id\": 3,\n    \"keyword\": \"Samsung\",\n    \"created_at\": \"2025-05-17T11:08:11.000Z\"\n  }\n]"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc2MDI0NDEsImV4cCI6MTc0NzYwNjA0MX0.njSQyOMwc0lPWVuMTdu2ax7BixgOq066AQ_ojOC6cQM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "delete search history",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://192.168.18.56:3000/search-history/3",
+                    "path": [
+                        "search-history",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "192",
+                        "168",
+                        "18",
+                        "56"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"message\": \"Deleted successfully\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc2MDI0NDEsImV4cCI6MTc0NzYwNjA0MX0.njSQyOMwc0lPWVuMTdu2ax7BixgOq066AQ_ojOC6cQM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "update product",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://192.168.18.56:3000/update-product/3",
+                    "path": [
+                        "update-product",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "192",
+                        "168",
+                        "18",
+                        "56"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc2MDI0NDEsImV4cCI6MTc0NzYwNjA0MX0.njSQyOMwc0lPWVuMTdu2ax7BixgOq066AQ_ojOC6cQM"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "name",
+                            "value": "zainab"
+                        },
+                        {
+                            "key": "description",
+                            "value": "premium laptop"
+                        },
+                        {
+                            "key": "price ",
+                            "value": "1000"
+                        },
+                        {
+                            "key": "category",
+                            "value": "computers"
+                        },
+                        {
+                            "key": "image url",
+                            "value": "http://192.168.18.56:3000/images/image1.jpg"
+                        }
+                    ]
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": " eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NCwiZW1haWwiOiJhbm1vbEBnbWFpbC5jb20iLCJpYXQiOjE3NDc2MDI0NDEsImV4cCI6MTc0NzYwNjA0MX0.njSQyOMwc0lPWVuMTdu2ax7BixgOq066AQ_ojOC6cQM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+{
+    "info": {
+        "_postman_id": "fea60386-cb53-4443-aaac-1fd9f49bc8c3",
+        "name": "usersignup",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "signup",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/registeruser",
+                    "path": [
+                        "registeruser"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"message\": \"All fields are required\"\n}"
+                }
+            }
+        }
+    ]
+}
